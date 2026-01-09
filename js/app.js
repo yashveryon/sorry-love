@@ -15,9 +15,9 @@ const CONFIG = {
   ],
 
   images: {
-    sorryGif: "assets/gifs/S1.gif",
-    hugGif: "assets/gifs/milkmocha_hug.gif",
-    herPic: "assets/images/OLUU.png"
+    sorryGif: "assets/S1.gif",
+    
+    herPic: "assets/OLUU.png"
   }
 };
 let msgIndex = 0;
@@ -205,4 +205,5 @@ function forgiven() {
 
 /* START */
 typeMessage(CONFIG.messages[msgIndex]);
+
 msgIndex++;
