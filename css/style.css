@@ -1,0 +1,96 @@
+:root {
+  --pink: #ff4da6;
+  --blue: #4dfcff;
+  --bg: #05050a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at top, #1a1a2e, var(--bg));
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+}
+
+.card {
+  width: 90%;
+  max-width: 360px;
+  background: rgba(0,0,0,0.8);
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px var(--pink);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.85); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.neon-text {
+  font-size: 26px;
+  color: var(--pink);
+  text-shadow: 0 0 8px var(--pink), 0 0 20px var(--pink);
+}
+
+img {
+  width: 180px;
+  border-radius: 15px;
+  margin: 15px auto;
+}
+
+p {
+  min-height: 70px;
+  line-height: 1.6;
+}
+
+button {
+  background: transparent;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  padding: 10px 22px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  box-shadow: 0 0 15px var(--blue);
+}
+
+button:hover {
+  background: var(--blue);
+  color: black;
+}
+
+/* MEMORY GAME */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.tile {
+  background: #111;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--pink);
+}
+
+/* RUNAWAY BUTTON */
+#noBtn {
+  position: absolute;
+  background: #444;
+  border: none;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+}
